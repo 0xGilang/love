@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Baloch Exploit</title>
+</head>
+<style>
+    #yes {
+        position: absolute;
+        left: 100px;
+        width: 100px;
+    }
+    #no {
+        position: absolute;
+        left: 300px;
+        width: 200px;
+    }
+</style>
+<style type="text/css">
+    .button{
+        text-align: center;
+    }
+</style>
+<body>
+    <script>
+        var nope = function() {
+            var btn = document.getElementById("no");
+            var top = Math.floor(Math.random()*400);
+            var left = Math.floor(Math.random()*800);
+            btn.style.top = top;
+            btn.style.left = left;
+           
+        }
+        var yep = function() {
+            alert("Anh cũng thích em :3");
+        }
+    </script>
+    <div style="background-image: url('/tán crush/love.png'); height: 100%; width: 100%;">
+    <center><h1 style="color: pink;">Apakah kamu menyukaiku?</h1></center>
+    <div class="button" style="text-align: center;">
+    <button style="height: 50px; width: 200px; border: 1px solid grey; border-radius: 25px; color: #ff00ff;" id="yes" onclick="yep()">Ya, aku mencintaimu selamanya :3</button>
+    <button style="height: 50px; width: 200px; border: 1px solid grey; border-radius: 25px; color: #00ffff;" id="no" onmouseover="nope()">tidak pernah :(</button>
+    </div>
+</body>
+</html>
